@@ -6,7 +6,7 @@
  * Time: 18:23
  */
 
-$con = mysqli_connect("localhost:3306","root","");
+$con = mysqli_connect("localhost:3306","root","root");
 if (!$con)
 {
     die('could not connect:' . mysqli_error($con));
@@ -16,27 +16,38 @@ else
     echo "connect sucessful";
 }
     //create database
-//if (mysqli_query($con,"create database mybd"))
-//{
+// if (mysqli_query($con,"create database my_db"))
+// {
 //    echo "database created";
-//}
-//else
-//{
+// }
+// else
+// {
 //    echo "'error creating database:' . mysqli_error($con)";
-//}
+// }
 
 
+    //create table
+//mysqli_select_db($con, "my_db");
+//$sql = "CREATE TABLE Persons
+//    (
+//        FirstName varchar(15),
+//        LastName varchar(15),
+//        Age int
+//    )";
+//mysqli_query($con,$sql);
+
+    //insert into database
+    mysqli_select_db($con,"my_db");
+    
+
+
+
+    //create select
+    // mysqli_select_db("$con", "mydb");
+    // $sql = "insert into "
 
 
 
 
 mysqli_close($con);
 ?>
-
-
-
-
-
-
-
-
