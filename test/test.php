@@ -37,8 +37,16 @@ else
 //mysqli_query($con,$sql);
 
     //insert into database
-    mysqli_select_db($con,"my_db");
-    
+//mysqli_select_db($con ,"my_db");
+//$sql="INSERT INTO Persons (FirstName, LastName, Age)
+//VALUES
+//('$_POST[firstname]','$_POST[lastname]','$_POST[age]')";
+//
+//if (!mysqli_query($con, $sql))
+//{
+//    die('Error: ' . mysqli_error($con));
+//}
+//echo "1 record added";
 
 
 
