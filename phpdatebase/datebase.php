@@ -5,8 +5,9 @@
  * Date: 8/5
  * Time: 18:23
  */
+    //标明文字格式
 header("Content-type: text/html; charset=utf-8");
-
+    //进入数据库
 $con = mysqli_connect("localhost:3306","root","root");
 if (!$con)
 {
