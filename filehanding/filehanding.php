@@ -8,12 +8,33 @@
 
 //标明文字格式
 header("Content-type: text/html; charset=utf-8");
-
-$myfile = fopen("filehanding.txt","a")or die("can`t open the file");
-fwrite($myfile, "朕裆下很郁闷啊！");
+$filename = $_POST['name'];
+$fileemail = $_POST['email'];
+$myfile = fopen("filehanding.txt", "a") or die("can`t open the file");
+fwrite($myfile, $filename);
+fwrite($myfile, $fileemail);
+fwrite($myfile, "\r\n");
 fclose($myfile);
-$myfile1= fopen("filehanding.txt", "r");
-echo fread($myfile1, filesize("filehanding.txt"));
-fclose($myfile1);
+//输出文件中内容
+//$myfile= fopen("filehanding.txt", "r");
+//echo fread($myfile, filesize("filehanding.txt"));
+//fclose($myfile);
+$myfile= fopen("filehanding.txt", "r");
+$echofile = arry();
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
+
+
+
+
